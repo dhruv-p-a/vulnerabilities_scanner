@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# vulnerabilities_scanner
+VulnScan Lite is a cybersecurity web vulnerability scanner that analyzes website security headers, SSL configuration, and CMS detection. Built using Python (FastAPI) backend and modern frontend dashboard, it provides real-time security reports with remediation suggestions.
+>>>>>>> 0510cffcc274c190e89605dab044d8cef3ff320d
