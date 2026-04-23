@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from "axios";
 
-const BASE_URL = 'http://YOUR_BACKEND_URL'; // Replace with actual backend
+const BASE_URL = "http://localhost:8000";
 
 export const initiateScan = async (url) => {
   const response = await axios.post(`${BASE_URL}/scan?url=${url}`);
@@ -30,4 +30,10 @@ export const pollScanResult = async (scanId) => {
       }
     }, 2000);
   });
+};
+
+// Simple scan function as requested
+export const scanWebsite = async (url) => {
+  const response = await axios.get(`${BASE_URL}/scan?url=${url}`);
+  return response.data;
 };
