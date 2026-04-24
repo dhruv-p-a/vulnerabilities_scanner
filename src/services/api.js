@@ -17,10 +17,10 @@ export const pollScanResult = async (scanId) => {
     const interval = setInterval(async () => {
       try {
         const data = await checkScanStatus(scanId);
-        if (data.status === 'completed') {
+        if (data.status === "completed") {
           clearInterval(interval);
           resolve(data);
-        } else if (data.status === 'failed') {
+        } else if (data.status === "failed") {
           clearInterval(interval);
           reject(new Error("Scan failed on server"));
         }
@@ -32,7 +32,6 @@ export const pollScanResult = async (scanId) => {
   });
 };
 
-// Simple scan function as requested
 export const scanWebsite = async (url) => {
   const response = await axios.get(`${BASE_URL}/scan?url=${url}`);
   return response.data;
